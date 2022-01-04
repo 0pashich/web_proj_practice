@@ -1,0 +1,24 @@
+{
+  "name": "web_proj_practice",
+  "version": "1.0.0",
+  "description": "web_proj_practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0pashich/web_proj_practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0pashich/web_proj_practice/issues"
+  },
+  "homepage": "https://github.com/0pashich/web_proj_practice#readme",
+  "devDependencies": {
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
