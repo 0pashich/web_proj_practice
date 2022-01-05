@@ -1,3 +1,12 @@
+# Build
+build/
+
+#media
+media/
+*.mp4
+*.mp3
+
+
 # Logs
 logs
 *.log
