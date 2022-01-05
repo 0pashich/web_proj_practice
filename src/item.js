@@ -13,6 +13,12 @@ export function drawGalleryItem(item) {
         audioElement.controls = true;
         audioElement.src = item.resource;
         itemElement.appendChild(audioElement);
+    } else if (item.type === 'video') {
+        const videoElement = document.createElement('video');
+        videoElement.classList = 'gallery-item__video';
+        videoElement.controls = true;
+        videoElement.src = item.resource;
+        itemElement.appendChild(videoElement);
     }
     const titleElement = document.createElement('span');
     titleElement.classList = 'gallery-item__title';

@@ -52,7 +52,15 @@ module.exports = {
                 loader: 'file-loader',
                 options: {
                     outputPath: 'audio',
-                    name: '[name].[ext]'
+                    name: '[name].[contenthash].[ext]'
+                }
+            },
+            {
+                test: /\.(ogv|mp4)$/i,
+                loader: 'file-loader',
+                options: {
+                    outputPath: 'video',
+                    name: '[name].[contenthash].[ext]'
                 }
             },
             // {
