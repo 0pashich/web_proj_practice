@@ -37,6 +37,7 @@ module.exports = {
                                 gifsicle: true,
                                 disableOnDevelopment: false,
                             },
+                            outputPath: 'image',
                             // loader: 'file-loader',
                         }
                     }
@@ -45,6 +46,14 @@ module.exports = {
                 // options: {
                 //     name: '[path][name].[ext]'
                 // }
+            },
+            {
+                test: /\.(wav|mp3)$/i,
+                loader: 'file-loader',
+                options: {
+                    outputPath: 'audio',
+                    name: '[name].[ext]'
+                }
             },
             // {
             //     test: /\.css$/i,
