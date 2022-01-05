@@ -27,7 +27,18 @@ module.exports = {
                 test: /\.(png|jpe?g|gif)$/i,
                 use: [
                     {
-                        loader: 'file-loader',
+                        loader: 'img-optimize-loader',
+
+                        options: {
+                            compress: {
+                                // This will take more time and get smaller images.
+                                webp: true,
+                                mode: 'high', // 'lossless', 'low'
+                                gifsicle: true,
+                                disableOnDevelopment: false,
+                            },
+                            // loader: 'file-loader',
+                        }
                     }
                 ]
 
