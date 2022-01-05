@@ -1,3 +1,10 @@
+# Build
+build/
+
+#media
+media/
+
+
 # Logs
 logs
 *.log
